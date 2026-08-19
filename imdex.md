@@ -1,4 +1,4 @@
-# Your Name
+# Stephen Dillon
 Data Science Student 
 UNC Charlotte 
 ## About Me
