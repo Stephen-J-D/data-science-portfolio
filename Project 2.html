@@ -9003,7 +9003,7 @@ Dropped 2 rows in tracts with zero 1-4 family units -&gt; 93,754 rows
 </tr>
 <tr>
 <td><code>log_loan_to_income</code></td>
-<td>loan amount ÷ income</td>
+<td>loan amount / income</td>
 <td>Stand-in for debt-to-income (not in 2017 HMDA)</td>
 </tr>
 <tr>
@@ -9018,7 +9018,7 @@ Dropped 2 rows in tracts with zero 1-4 family units -&gt; 93,754 rows
 </tr>
 <tr>
 <td><code>tract_owner_occ_rate</code></td>
-<td>owner-occupied units ÷ 1–4 family units</td>
+<td>owner-occupied units / 1-4 family units</td>
 <td>Neighborhood homeownership rate</td>
 </tr>
 </tbody>
@@ -9303,15 +9303,13 @@ Majority-class baseline accuracy: 73.0%
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [218]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># View summary stats of numeric values and confirm no infinite values were created by the log or ratio calculations</span>
 <span class="n">numeric</span> <span class="o">=</span> <span class="n">approval_df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="s2">"number"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Infinite values:"</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">isinf</span><span class="p">(</span><span class="n">numeric</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()))</span>
 <span class="n">approval_df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
-
-<span class="c1"># Check log_loan_to_income min.</span>
 </pre></div>
 </div>
 </div>
@@ -9329,7 +9327,7 @@ Majority-class baseline accuracy: 73.0%
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[218]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
