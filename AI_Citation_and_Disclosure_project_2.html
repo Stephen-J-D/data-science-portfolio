@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Citation and Usage Disclosure: Personal Portfolio Project Two</title>
+<style>
+  :root {
+    --ink: #1f2a37;
+    --muted: #5b6776;
+    --rule: #d5dbe2;
+    --accent: #2f6f62;
+    --panel: #f3f6f8;
+    --paper: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+  main {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+  }
+  h1, h2 {
+    font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.25;
+    color: var(--ink);
+  }
+  h1 { font-size: 1.75rem; font-weight: 650; margin: 0 0 0.35rem; }
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 650;
+    margin: 2.5rem 0 0.75rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+  }
+  .subtitle { color: var(--muted); margin: 0 0 2rem; }
+  p { margin: 0 0 1rem; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* APA reference entry with hanging indent */
+  .reference {
+    background: var(--panel);
+    border-left: 4px solid var(--accent);
+    padding: 1rem 1.25rem 1rem 3.25rem;
+    text-indent: -2rem;
+    margin: 0 0 1rem;
+    overflow-wrap: anywhere;
+  }
+  .label {
+    font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--muted);
+    margin: 1.5rem 0 0.4rem;
+  }
+  dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.4rem 1.25rem;
+    margin: 0 0 1rem;
+  }
+  dt { font-weight: 600; }
+  dd { margin: 0; }
+  ul { padding-left: 1.25rem; margin: 0 0 1rem; }
+  li { margin-bottom: 0.5rem; }
+  .note { color: var(--muted); font-size: 0.95rem; }
+
+  @media (max-width: 30rem) {
+    dl { grid-template-columns: 1fr; }
+    dd { margin-bottom: 0.5rem; }
+  }
+  @media print {
+    main { padding: 0; max-width: none; }
+    .reference { background: none; }
+    a { color: var(--ink); }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>AI Citation and Usage Disclosure</h1>
+  <p class="subtitle">Personal Portfolio Project Two, DTSC 2301: Predicting Mortgage Refinance Approval in North Carolina (HMDA 2017)</p>
+
+  <h2>APA citation</h2>
+  <p class="label">Reference list entry</p>
+  <p class="reference">Anthropic. (2026). <em>Claude</em> (Opus 5.5 version) [Large language model]. <a href="https://claude.ai">https://claude.ai</a></p>
+
+  <p class="label">In-text citation</p>
+  <p>Parenthetical: (Anthropic, 2026). Narrative: Anthropic’s Claude (2026).</p>
+
+  <p class="note">APA treats the company that makes an AI tool as the author and the tool as the title, with the version and a bracketed description. If you create a share link for this conversation, you can replace the general URL with that link so readers can view the exact chat.</p>
+
+  <h2>AI usage disclosure</h2>
+  <dl>
+    <dt>Tool</dt><dd>Claude, a large language model by Anthropic</dd>
+    <dt>Version</dt><dd>Claude Opus 5.5</dd>
+    <dt>Interface</dt><dd>Claude.ai web chat</dd>
+    <dt>Date of use</dt><dd>October 2026</dd>
+  </dl>
+
+  <p>Claude was used for the following purposes during this project:</p>
+  <ul>
+    <li><strong>Topic and data selection:</strong> brainstorming project topics and identifying public mortgage datasets, including HMDA data from the Consumer Financial Protection Bureau and the Freddie Mac Single-Family Loan-Level Dataset.</li>
+    <li><strong>Data profiling:</strong> running summaries of the uploaded HMDA files, including record counts, approval rates by loan purpose and property type, missing-value checks, and distributions of individual fields.</li>
+    <li><strong>Problem design:</strong> defining the binary approval target, the sample filters (first lien, owner-occupied, one-to-four family site-built homes), the feature list, and the fields to exclude for leakage, redundancy, or lack of information.</li>
+    <li><strong>Code generation:</strong> writing Python code for exploratory visualizations, data cleaning and feature engineering, the scikit-learn preprocessing pipeline, the baseline, logistic regression, and random forest models, hyperparameter tuning, evaluation metrics and charts, model interpretation, and the fairness audit.</li>
+    <li><strong>Explanation of concepts:</strong> explaining log transforms, preprocessing pipelines, random seeds, hyperparameter tuning (including <code>C</code>, <code>max_depth</code>, and <code>min_samples_leaf</code>), ROC-AUC, denial recall and precision, and multicollinearity.</li>
+    <li><strong>Feedback on writing:</strong> reviewing drafts of the introduction and analysis sections for accuracy and clarity, and suggesting revised wording.</li>
+    <li><strong>Code review:</strong> reviewing the project notebook for errors, missing rubric requirements, and reproducibility issues.</li>
+    <li><strong>Sources:</strong> locating peer-reviewed research on mortgage refinancing after the 2008 financial crisis and formatting APA citations.</li>
+  </ul>
+
+  <p class="note">All AI-generated code was run and checked against the data, and all sources were reviewed before citation. Final modeling decisions, interpretation, and written conclusions are the author’s own.</p>
+</main>
+</body>
+</html>
