@@ -24,9 +24,6 @@ title: My Notebook
 </style>
 
 <details style="margin-top: 2rem;">
-  <summary style="cursor:pointer; font-weight:600; padding:0.5rem 0; font-size:1.1rem;">
-    AI Citation and Usage Disclosure (click to expand)
-  </summary>
   <iframe src="/data-science-portfolio/AI_Citation_and_Disclosure_project_2.html"
           style="width:100%; height:70vh; border:none; margin-top:1rem;">
   </iframe>
