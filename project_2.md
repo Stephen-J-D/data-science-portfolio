@@ -23,6 +23,6 @@ title: My Notebook
   }
 </style>
 
-<iframe src="/data-science-portfolio/Project 2 html.html" 
+<iframe src="/data-science-portfolio/Project 2.html" 
         style="width:100%; height:800px; border:none;">
 </iframe>
